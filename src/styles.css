@@ -1,2 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+ */@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+body {
+    margin: 0px;
+}
+.logo-font {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+.app-toolbar-filler {
+    flex: 1 1 auto;
+}
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+mat-sidenav {
+    width: 200px;
+}
+.app-container {
+    height: 100%;
+}
+.login-card {
+    max-height: 600px;
+    max-width: 600px;
+    margin-top: 40px;
+}
