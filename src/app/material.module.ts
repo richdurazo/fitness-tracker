@@ -7,7 +7,7 @@ import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { MatMenuModule, MatCardModule } from '@angular/material';
+import { MatMenuModule, MatCardModule, MatListModule } from '@angular/material';
 
 @NgModule({
     imports: [
@@ -20,7 +20,8 @@ import { MatMenuModule, MatCardModule } from '@angular/material';
         MatSidenavModule,
         MatToolbarModule,
         MatMenuModule,
-        MatCardModule
+        MatCardModule,
+        MatListModule
     ],
     exports: [
         MatButtonModule,
@@ -32,7 +33,8 @@ import { MatMenuModule, MatCardModule } from '@angular/material';
         MatSidenavModule,
         MatToolbarModule,
         MatMenuModule,
-        MatCardModule
+        MatCardModule,
+        MatListModule
     ]
 })
 export class MaterialModule {}
