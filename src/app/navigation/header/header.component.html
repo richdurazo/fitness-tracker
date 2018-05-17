@@ -1,0 +1,34 @@
+<mat-toolbar color="primary" class="mat-elevation-z16">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+  </div>
+  <div class="logo-font">
+    <button mat-button routerLink="/">
+      <div class="logo-font">Fittness Tracker</div>
+    </button>
+  </div>
+  <span class="app-toolbar-filler"></span>
+  <div fxLayout fxHide.xs>
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item routerLink="/signup">
+        <span>signup</span>
+      </button>
+      <button mat-menu-item routerLink="/login">
+        <span>login</span>
+      </button>
+
+      <button mat-menu-item routerLink="/training">
+        <span>training</span>
+      </button>
+
+    </mat-menu>
+    <button class="primary-grey" mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+
+</mat-toolbar>

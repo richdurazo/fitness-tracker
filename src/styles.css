@@ -27,7 +27,6 @@ mat-sidenav {
 }
 .app-container {
     height: 100%;
-    margin: 24px;
 }
 .login-card {
     max-height: 600px;

@@ -7,7 +7,9 @@ import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { MatMenuModule, MatCardModule, MatListModule } from '@angular/material';
+import { MatMenuModule, MatCardModule, MatListModule, MatSelectModule, MatDialogModule } from '@angular/material';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
     imports: [
@@ -21,7 +23,11 @@ import { MatMenuModule, MatCardModule, MatListModule } from '@angular/material';
         MatToolbarModule,
         MatMenuModule,
         MatCardModule,
-        MatListModule
+        MatListModule,
+        MatTabsModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatDialogModule
     ],
     exports: [
         MatButtonModule,
@@ -34,7 +40,11 @@ import { MatMenuModule, MatCardModule, MatListModule } from '@angular/material';
         MatToolbarModule,
         MatMenuModule,
         MatCardModule,
-        MatListModule
+        MatListModule,
+        MatTabsModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatDialogModule
     ]
 })
 export class MaterialModule {}
