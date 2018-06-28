@@ -14,17 +14,19 @@
   <span class="app-toolbar-filler"></span>
   <div fxLayout fxHide.xs>
     <mat-menu #appMenu="matMenu">
-      <button mat-menu-item routerLink="/signup">
+      <button mat-menu-item routerLink="/signup" *ngIf="!isAuth">
         <span>signup</span>
       </button>
-      <button mat-menu-item routerLink="/login">
+      <button mat-menu-item routerLink="/login" *ngIf="!isAuth">
         <span>login</span>
       </button>
 
-      <button mat-menu-item routerLink="/training">
+      <button mat-menu-item routerLink="/training" *ngIf="isAuth">
         <span>training</span>
       </button>
-
+      <button mat-menu-item *ngIf="isAuth">
+        <span>logout</span>
+      </button>
     </mat-menu>
     <button class="primary-grey" mat-icon-button [matMenuTriggerFor]="appMenu">
       <mat-icon>keyboard_arrow_down</mat-icon>
