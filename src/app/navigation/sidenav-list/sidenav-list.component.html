@@ -1,23 +1,23 @@
 <mat-nav-list dense>
-  <mat-list-item routerLink="/signup" (click)="onClose()">
+  <mat-list-item routerLink="/signup" (click)="onClose()" *ngIf="!isAuth">
     <mat-icon>face</mat-icon>
     <div class="nav-caption">
       Signup
     </div>
   </mat-list-item>
-  <mat-list-item routerLink="/login" (click)="onClose()">
+  <mat-list-item routerLink="/login" (click)="onClose()" *ngIf="!isAuth">
     <mat-icon>lock_open</mat-icon>
     <div class="nav-caption">
       Login
     </div>
   </mat-list-item>
-  <mat-list-item routerLink="/training" (click)="onClose()">
+  <mat-list-item routerLink="/training" (click)="onClose()" *ngIf="isAuth">
     <mat-icon>directions_run</mat-icon>
     <div class="nav-caption">
       Training
     </div>
   </mat-list-item>
-  <mat-list-item (click)="sidenav.close()">
+  <mat-list-item (click)="onLogout()" *ngIf="isAuth">
     <mat-icon>lock</mat-icon>
     <div class="nav-caption">
       Logout

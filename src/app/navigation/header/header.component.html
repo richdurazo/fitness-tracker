@@ -24,7 +24,7 @@
       <button mat-menu-item routerLink="/training" *ngIf="isAuth">
         <span>training</span>
       </button>
-      <button mat-menu-item *ngIf="isAuth">
+      <button mat-menu-item (click)="onLogout()" *ngIf="isAuth">
         <span>logout</span>
       </button>
     </mat-menu>
